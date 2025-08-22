@@ -12,6 +12,9 @@
 class $AssetsEnvGen {
   const $AssetsEnvGen();
 
+  /// File path: assets/env/.env
+  String get aEnv => 'assets/env/.env';
+
   /// File path: assets/env/.env.dev
   String get aEnvDev => 'assets/env/.env.dev';
 
@@ -19,7 +22,7 @@ class $AssetsEnvGen {
   String get aEnvProd => 'assets/env/.env.prod';
 
   /// List of all assets
-  List<String> get values => [aEnvDev, aEnvProd];
+  List<String> get values => [aEnv, aEnvDev, aEnvProd];
 }
 
 class $AssetsFontsGen {

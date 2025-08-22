@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Flutter: Load Prod Env",
+            "type": "shell",
+            "command":"./scripts/load_env.sh prod",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Flutter: Load Dev Env",
+            "type": "shell",
+            "command":"./scripts/load_env.sh dev",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+
+    ],
+}

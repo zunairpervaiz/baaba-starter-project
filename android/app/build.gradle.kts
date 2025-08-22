@@ -30,19 +30,19 @@ android {
         versionName = flutter.versionName
     }
 
-    flavorDimensions +='default'
+    flavorDimensions += "default"
 
     productFlavors{
         create("prod"){
-            dimension = 'default'
-            resValue('string',"app_name",'Baaba')
+            dimension = "default"
+            resValue("string","app_name","Baaba Prod")
         }
 
         create("dev"){
-            dimension = 'default'
-            resValue('string',"app_name","Baaba Dev")
-            applicationIdSuffix = '.dev'
-            versionNameSuffix = '.dev'
+            dimension = "default"
+            resValue("string","app_name","Baaba Dev")
+            applicationIdSuffix = ".dev"
+            versionNameSuffix = ".dev"
         }
     }
 

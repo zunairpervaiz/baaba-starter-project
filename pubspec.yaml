@@ -21,6 +21,7 @@ dependencies:
   flutter_dotenv: ^6.0.0
   baaba_api_services:
     git: https://github.com/zunairpervaiz/baaba-api-services.git
+  envied: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -31,6 +32,7 @@ dev_dependencies:
   package_rename: ^1.10.0
   flutter_gen_runner: ^5.11.0
   flutter_launcher_icons: ^0.14.4
+  envied_generator: ^1.2.0
 
 flutter:
   uses-material-design: true
