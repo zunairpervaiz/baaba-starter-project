@@ -11,7 +11,6 @@
             "program": "lib/main_dev.dart",
             "args": ["--flavor", "dev", "--target","lib/main_dev.dart", "--dart-define=flavor=dev"],
             "flutterMode": "debug",
-            "preLaunchTask": "Flutter: Load Dev Env",
         },
         {
             "name": "dev > profile",
@@ -20,7 +19,6 @@
             "program": "lib/main_dev.dart",
             "args": ["--flavor", "dev", "--target","lib/main_dev.dart","--dart-define=flavor=dev"],
             "flutterMode": "profile",
-            "preLaunchTask": "Flutter: Load Dev Env",
         },
         {
             "name": "dev > release",
@@ -29,7 +27,6 @@
             "program": "lib/main_dev.dart",
             "args": ["--flavor", "dev", "--target","lib/main_dev.dart","--dart-define=flavor=dev"],
             "flutterMode": "release",
-            "preLaunchTask": "Flutter: Load Dev Env",
         },
         {
             "name": "prod > debug mode",
@@ -38,7 +35,6 @@
             "program": "lib/main_prod.dart",
             "args": ["--flavor", "prod", "--target","lib/main_prod.dart","--dart-define=flavor=prod"],
             "flutterMode": "debug",
-            "preLaunchTask": "Flutter: Load Prod Env",
         },
         {
             "name": "prod > profile",
@@ -47,7 +43,6 @@
             "program": "lib/main_prod.dart",
             "args": ["--flavor", "prod", "--target","lib/main_prod.dart","--dart-define=flavor=prod"],
             "flutterMode": "profile",
-            "preLaunchTask": "Flutter: Load Prod Env",
         },
         {
             "name": "prod > release",
@@ -56,7 +51,6 @@
             "program": "lib/main_prod.dart",
             "args": ["--flavor", "prod", "--target","lib/main_prod.dart","--dart-define=flavor=prod"],
             "flutterMode": "release",
-            "preLaunchTask": "Flutter: Load Prod Env",
         }
     ]
 }

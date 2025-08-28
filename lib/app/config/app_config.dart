@@ -1,17 +1,17 @@
 import 'package:envied/envied.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 part 'app_config.g.dart';
 
-@Envied(path: 'assets/env/.env')
+@Envied(path: 'assets/env/.env.dev', name: "DebugEnv")
+@Envied(path: 'assets/env/.env.prod', name: "ProductionEnv")
 final class AppConfig {
-  const AppConfig._();
+  static const bool kDebugMode = true;
+  factory AppConfig() => _instance;
 
-  // static Env get environment => switch (dotenv.get('ENV')) {
-  //   'prod' => Env.prod,
-  //   'dev' => Env.dev,
-  //   _ => throw UnimplementedError(),
-  // };
-
-  static String get baseUrl => dotenv.get('BASE_URL');
+  static final AppConfig _instance = switch (kDebugMode) {
+    true => _DebugEnv(),
+    false => _ProductionEnv(),
+  };
+  @EnviedField(varName: 'BASE_URL')
+  final String baseUrl = _instance.baseUrl;
 }

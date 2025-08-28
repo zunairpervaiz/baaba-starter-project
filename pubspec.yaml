@@ -18,7 +18,6 @@ dependencies:
   shared_preferences: ^2.5.3
   get: ^4.7.2
   share_plus: ^11.1.0
-  flutter_dotenv: ^6.0.0
   baaba_api_services:
     git: https://github.com/zunairpervaiz/baaba-api-services.git
   envied: ^1.2.0
