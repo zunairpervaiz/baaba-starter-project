@@ -9,7 +9,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "dev","--dart-define=flavor=dev"],
+            "args": ["--flavor", "dev", "--dart-define","flavor=dev"],
             "flutterMode": "debug",
         },
         {
@@ -17,7 +17,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "dev","--dart-define=flavor=dev"],
+            "args": ["--flavor", "dev", "--dart-define","flavor=dev"],
             "flutterMode": "profile",
         },
         {
@@ -25,7 +25,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "dev","--dart-define=flavor=dev"],
+            "args": ["--flavor", "dev", "--dart-define","flavor=dev"],
             "flutterMode": "release",
         },
         {
@@ -33,7 +33,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "prod","--dart-define=flavor=prod"],
+            "args": ["--flavor", "prod","--dart-define","flavor=prod"],
             "flutterMode": "debug",
         },
         {
@@ -41,7 +41,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "prod","--dart-define=flavor=prod"],
+            "args": ["--flavor", "prod","--dart-define","flavor=prod"],
             "flutterMode": "profile",
         },
         {
@@ -49,7 +49,7 @@
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
-            "args": ["--flavor", "prod","--dart-define=flavor=prod"],
+            "args": ["--flavor", "prod","--dart-define","flavor=prod"],
             "flutterMode": "release",
         }
     ]

@@ -7,7 +7,10 @@ abstract class AppPages {
   static final pages = <GetPage>[
     GetPage(
       name: Routes.splash,
-      page: () => const Scaffold(body: Center(child: Text('Splash'))),
+      page: () => Scaffold(
+        backgroundColor: Colors.deepOrangeAccent,
+        body: Center(child: Text('Splash')),
+      ),
     ),
   ];
 }
