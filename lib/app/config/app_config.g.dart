@@ -9,7 +9,7 @@ part of 'app_config.dart';
 // coverage:ignore-file
 // ignore_for_file: type=lint
 // generated_from: assets/env/.env.dev
-final class _DebugEnv implements AppConfig {
+final class _DevEnv implements AppConfig {
   @override
   final String baseUrl = '';
 }
