@@ -24,7 +24,7 @@ final class ConnectivityService {
 
   @PostConstruct(preResolve: true)
   Future<ConnectivityService> init() async {
-    _connection = InternetConnection.createInstance(checkInterval: Duration(seconds: 5));
+    _connection = InternetConnection.createInstance(checkInterval: const Duration(seconds: 5));
     return this;
   }
 
@@ -38,7 +38,6 @@ final class ConnectivityService {
           hasInternetConnection = true;
           _onReconnect?.call();
           if (Get.isDialogOpen ?? false) Get.back<void>();
-          break;
         case InternetStatus.disconnected:
           hasInternetConnection = false;
           if (showDialogOnDisconnected) {
@@ -47,7 +46,6 @@ final class ConnectivityService {
               //show dialog here
             }
           }
-          break;
       }
     });
   }

@@ -1,7 +1,9 @@
+import 'package:baaba_starter_project/app/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 extension BuildContextExt on BuildContext {
+  AppLocalizations get l10n => AppLocalizations.of(this);
   bool get isDarkMode => Theme.of(this).brightness == Brightness.dark;
   ColorScheme get colorScheme => Theme.of(this).colorScheme;
   double get screenWidth => MediaQuery.sizeOf(this).width;

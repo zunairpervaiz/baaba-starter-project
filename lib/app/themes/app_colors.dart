@@ -4,7 +4,7 @@ final class AppColors {
   const AppColors._();
 
   static const black = Color(0x00000000);
-  static var defaultDisabledButtonColor = Color(0x00ff00ff);
+  static Color defaultDisabledButtonColor = const Color(0x00ff00ff);
 
   static const ColorScheme lightColorScheme = ColorScheme(
     brightness: Brightness.light,

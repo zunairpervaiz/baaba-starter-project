@@ -7,7 +7,7 @@ final class ShareUtils {
   static Future<ShareResult?> share(BuildContext context, String text, String? subject) async {
     if (!context.mounted) return null;
 
-    final box = context.findRenderObject() as RenderBox;
+    final box = context.findRenderObject()! as RenderBox;
     final sharePositionOrigin = box.localToGlobal(Offset.zero) & box.size;
 
     return SharePlus.instance.share(ShareParams(text: text, subject: subject, sharePositionOrigin: sharePositionOrigin));
@@ -17,7 +17,7 @@ final class ShareUtils {
     try {
       if (!context.mounted) return null;
 
-      final box = context.findRenderObject() as RenderBox;
+      final box = context.findRenderObject()! as RenderBox;
       final sharePositionOrigin = box.localToGlobal(Offset.zero) & box.size;
 
       return SharePlus.instance.share(ShareParams(files: files, text: text, subject: subject, sharePositionOrigin: sharePositionOrigin));

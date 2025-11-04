@@ -1,5 +1,3 @@
-// ignore_for_file: depend_on_referenced_packages, implementation_imports
-
 import 'package:baaba_api_services/api_services.dart';
 import 'package:baaba_api_services/utils/failure.dart';
 import 'package:dio/src/response.dart';

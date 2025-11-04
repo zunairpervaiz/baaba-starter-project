@@ -28,14 +28,14 @@ final class AppThemes {
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: AppColors.lightColorScheme.secondary,
       foregroundColor: AppColors.lightColorScheme.onSecondary,
-      shape: CircleBorder(),
+      shape: const CircleBorder(),
     ),
     cardTheme: CardThemeData(
       clipBehavior: Clip.hardEdge,
       margin: defaultHorizontalPadding,
       shape: RoundedRectangleBorder(borderRadius: defaultBorderRadius),
     ),
-    iconTheme: IconThemeData(applyTextScaling: true),
+    iconTheme: const IconThemeData(applyTextScaling: true),
   );
 
   static final ThemeData lightTheme = _lightTheme.copyWith(textTheme: _textTheme);
