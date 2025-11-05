@@ -2,7 +2,12 @@ import 'dart:math';
 import 'dart:ui';
 
 extension ColorExt on Color {
-  static Color fromHex(String hexString) => Color(int.parse(hexString.replaceFirst('#', '0xFF')));
+  static Color fromHex(String hexString) {
+    final buffer = StringBuffer();
+    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
+    buffer.write(hexString.replaceFirst('#', ''));
+    return Color(int.parse(buffer.toString(), radix: 16));
+  }
 
   static Color get getRandomLightColor {
     final random = Random();
