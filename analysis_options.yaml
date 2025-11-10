@@ -24,9 +24,13 @@ analyzer:
     avoid_void_async: ignore
     inference_failure_on_function_invocation: ignore
     avoid_catches_without_on_clauses: ignore
+    type_annotate_public_apis: ignore
 
-  exclude: test/.test_coverage.dart
-    lib/generated_plugin_registrant.dart
+  exclude: 
+    - "test/.test_coverage.dart"
+    - "lib/generated_plugin_registrant.dart"
+    - "feature_brick/**"
+    
 
 linter:
   rules:
